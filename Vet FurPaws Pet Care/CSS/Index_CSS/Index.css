@@ -1,0 +1,243 @@
+body {
+    margin: 0; /* Remove default top and bottom margins */
+    padding: 0; /* Remove default padding */
+    font-family: 'Montserrat', sans-serif; /* Apply font globally */
+    line-height: 1.6; /* Improve readability */
+    background-color: #f5f5f5; /* Light gray background color */
+  }
+
+#about { /* Or #hero */
+    display: flex;
+    justify-content: space-around; /* Distribute space evenly */
+    align-items: center; /* Vertically center content */
+    min-height: 400px; /* Adjust as needed */
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+  
+  .container {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .text-section {
+    width: 45%; /* Adjust width as needed */
+    text-align: left;
+  }
+  
+  .image-section {
+    width: 45%; /* Adjust width as needed */
+    text-align: center;
+  }
+  
+  .image-section img {
+    max-width: 100%; /* Ensure image doesn't exceed container width */
+    height: auto;     /* Maintain aspect ratio */
+    border-radius: 50%; /* Make the image circular */
+  }
+  
+  .cta {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #102e92;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Responsive styles for smaller screens */
+  @media (max-width: 768px) {
+    #about {
+      flex-direction: column; /* Stack text and image vertically */
+      align-items: center;
+    }
+  
+    .text-section,
+    .image-section {
+      width: 100%;
+      margin-bottom: 20px; /* Add spacing between text and image */
+    }
+  }
+
+
+  /*      ////////////////////SERVICES//////////////////////////              */
+
+  #services {
+    background-color: #102e92;
+    padding: 40px 0;
+    text-align: center;
+  }
+
+  .services-header {
+    margin-bottom: 30px; /* Add spacing below the header */
+    text-align: center;
+  }
+  .services-title {
+    color: white; /* Change heading text color */
+    margin-bottom: 10px; /* Add spacing below the heading */
+  }
+  
+  #services h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+  }
+  
+  .service-grid {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+    justify-content: space-around; /* Distribute space evenly between items */
+    gap: 20px;
+  }
+  
+  
+  .service-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px; /* Add border-radius here */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1 0 300px; /* Each item takes equal width, min 300px */
+    max-width: 300px;
+  }
+  
+  
+  .service-item i {
+    font-size: 3em;
+    color: #102e92; /* Dark blue icon color */
+    margin-bottom: 10px;
+  }
+  
+  .service-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .service-item:hover {
+    background-color: #0078f8;
+    border: 2px solid #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .service-item:hover i {
+    color: #ffffff;
+  }
+
+  .learn-more {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #102e92;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 30px;
+    text-decoration: none;
+    cursor: pointer;
+
+
+  }
+  .learn-more:hover {
+    background-color: #1b9bff;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .learn-more:hover {
+    color: white; /* Change text color to white */
+  }
+  @media (max-width: 1024px) { /* Adjust breakpoint as needed */
+    .service-item {
+      flex: 0 0 50%; /* Each item takes 50% of the available width */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .service-item {
+      flex: 0 0 100%; /* Each item takes 100% of the available width */
+    }
+  }
+
+  /*      //////////////////////////////////////////////              */
+  #faq {
+    background-color: #f0f8f5; /* Light green background */
+    padding: 40px 0;
+  }
+  
+  #faq h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+  }
+  
+  .faq-list {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .faq-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .faq-question {
+    cursor: pointer;
+    padding: 15px;
+    font-weight: bold;
+  }
+  
+  .faq-answer {
+    display: none; /* Initially hide the answers */
+    padding: 15px;
+  }
+  
+  .faq-item.active .faq-answer {
+    display: block; /* Show the answer when the item is active */
+  }
+
+  #backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #102e92;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  display: none; /* Initially hide the button */
+  z-index: 1000; /* Ensure it's on top of other elements */
+}
+
+#backToTop i {
+  font-size: 1.5em;
+}
+
+/* Show the button when the user scrolls down */
+#backToTop.show {
+  display: block;
+}
+
+
+  /*      //////////////////////////////////////////////              */
+  #backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #102e92;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: none; /* Initially hide the button */
+    z-index: 1000; /* Ensure it's on top of other elements */
+  }
+  
+  #backToTop i {
+    font-size: 1.5em;
+  }
+  
+  /* Show the button when the user scrolls down */
+  #backToTop.show {
+    display: block;
+  }

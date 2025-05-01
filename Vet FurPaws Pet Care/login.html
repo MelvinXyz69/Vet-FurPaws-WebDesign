@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS/Index_CSS/header.css">
+    <link rel="stylesheet" type="text/css" href="CSS/Index_CSS/footer.css">
+    <link rel="stylesheet" type="text/css" href="CSS/login.css">
+    <title>Login</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="Assets/Logo.jpg" alt="Clinic Logo">
+      </div>
+      <div class="site-title">
+        <h1>Vet FurPaws</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a class="active" href="/index.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Feedback</a></li>
+          </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div id="login-form">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <button type="button" onclick="login()">Login</button>
+      </form>
+      <p id="message"></p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="column">
+          <h3>Contact</h3>
+          <p>...</p>
+        </div>
+        <div class="column">
+          <h3>Directions</h3>
+          <p>...</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="copyright">&copy; 2023 Vet FurPaws Pet Care Services. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/J-Script/log-in.js"></script>
+</body>
+</html>

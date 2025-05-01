@@ -1,0 +1,112 @@
+header {
+  background-color: #102e92;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 30px;
+}
+
+p {
+  font-weight: bold;
+  font-size: 18px;
+}
+a {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo img {
+  height: 60px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.site-title {
+  margin-right: auto;
+}
+
+.site-title h1 {
+  margin: 0;
+  font-size: 24px;
+  color: white;
+}
+
+nav a.active {
+ 
+  color: white;
+  text-decoration: underline; /* Add underline */
+  text-decoration-color: white; /* Set underline color to white */
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s; /* Smoother transitions */
+}
+
+nav a:hover {
+  background-color: #ffff;
+  color: #000;
+}
+
+/* Styles specific to the login button */
+nav .login-button {
+  background-color: white;
+  color: #102e92;
+  border: 1px solid #102e92;
+}
+
+nav .login-button:hover {
+  background-color: #1b9bff;
+  color: white;
+}
+
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo,
+  .site-title,
+  nav {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
